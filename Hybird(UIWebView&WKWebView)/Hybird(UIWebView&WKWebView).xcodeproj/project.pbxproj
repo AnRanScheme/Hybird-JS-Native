@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3558FD101E824BD300ECC431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558FD0F1E824BD300ECC431 /* AppDelegate.swift */; };
+		3558FD121E824BD300ECC431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558FD111E824BD300ECC431 /* ViewController.swift */; };
+		3558FD151E824BD300ECC431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3558FD131E824BD300ECC431 /* Main.storyboard */; };
+		3558FD171E824BD300ECC431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3558FD161E824BD300ECC431 /* Assets.xcassets */; };
+		3558FD1A1E824BD300ECC431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3558FD181E824BD300ECC431 /* LaunchScreen.storyboard */; };
+		3558FD241E8251E600ECC431 /* ARAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558FD231E8251E600ECC431 /* ARAWebViewController.swift */; };
+		3558FD261E82520200ECC431 /* ARAWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558FD251E82520200ECC431 /* ARAWKWebViewController.swift */; };
+		3558FD281E8258BA00ECC431 /* anran.html in Resources */ = {isa = PBXBuildFile; fileRef = 3558FD271E8258BA00ECC431 /* anran.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3558FD0C1E824BD300ECC431 /* Hybird(UIWebView&WKWebView).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hybird(UIWebView&WKWebView).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3558FD0F1E824BD300ECC431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3558FD111E824BD300ECC431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3558FD141E824BD300ECC431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3558FD161E824BD300ECC431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3558FD191E824BD300ECC431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3558FD1B1E824BD300ECC431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3558FD231E8251E600ECC431 /* ARAWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAWebViewController.swift; sourceTree = "<group>"; };
+		3558FD251E82520200ECC431 /* ARAWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAWKWebViewController.swift; sourceTree = "<group>"; };
+		3558FD271E8258BA00ECC431 /* anran.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = anran.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3558FD091E824BD200ECC431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3558FD031E824BD200ECC431 = {
+			isa = PBXGroup;
+			children = (
+				3558FD0E1E824BD300ECC431 /* Hybird(UIWebView&WKWebView) */,
+				3558FD0D1E824BD300ECC431 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3558FD0D1E824BD300ECC431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3558FD0C1E824BD300ECC431 /* Hybird(UIWebView&WKWebView).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3558FD0E1E824BD300ECC431 /* Hybird(UIWebView&WKWebView) */ = {
+			isa = PBXGroup;
+			children = (
+				3558FD271E8258BA00ECC431 /* anran.html */,
+				3558FD0F1E824BD300ECC431 /* AppDelegate.swift */,
+				3558FD111E824BD300ECC431 /* ViewController.swift */,
+				3558FD231E8251E600ECC431 /* ARAWebViewController.swift */,
+				3558FD251E82520200ECC431 /* ARAWKWebViewController.swift */,
+				3558FD131E824BD300ECC431 /* Main.storyboard */,
+				3558FD161E824BD300ECC431 /* Assets.xcassets */,
+				3558FD181E824BD300ECC431 /* LaunchScreen.storyboard */,
+				3558FD1B1E824BD300ECC431 /* Info.plist */,
+			);
+			path = "Hybird(UIWebView&WKWebView)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3558FD0B1E824BD200ECC431 /* Hybird(UIWebView&WKWebView) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3558FD1E1E824BD300ECC431 /* Build configuration list for PBXNativeTarget "Hybird(UIWebView&WKWebView)" */;
+			buildPhases = (
+				3558FD081E824BD200ECC431 /* Sources */,
+				3558FD091E824BD200ECC431 /* Frameworks */,
+				3558FD0A1E824BD200ECC431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hybird(UIWebView&WKWebView)";
+			productName = "Hybird(UIWebView&WKWebView)";
+			productReference = 3558FD0C1E824BD300ECC431 /* Hybird(UIWebView&WKWebView).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3558FD041E824BD200ECC431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "安然";
+				TargetAttributes = {
+					3558FD0B1E824BD200ECC431 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E8ZU3Y58CG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3558FD071E824BD200ECC431 /* Build configuration list for PBXProject "Hybird(UIWebView&WKWebView)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3558FD031E824BD200ECC431;
+			productRefGroup = 3558FD0D1E824BD300ECC431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3558FD0B1E824BD200ECC431 /* Hybird(UIWebView&WKWebView) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3558FD0A1E824BD200ECC431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3558FD1A1E824BD300ECC431 /* LaunchScreen.storyboard in Resources */,
+				3558FD281E8258BA00ECC431 /* anran.html in Resources */,
+				3558FD171E824BD300ECC431 /* Assets.xcassets in Resources */,
+				3558FD151E824BD300ECC431 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3558FD081E824BD200ECC431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3558FD241E8251E600ECC431 /* ARAWebViewController.swift in Sources */,
+				3558FD121E824BD300ECC431 /* ViewController.swift in Sources */,
+				3558FD261E82520200ECC431 /* ARAWKWebViewController.swift in Sources */,
+				3558FD101E824BD300ECC431 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3558FD131E824BD300ECC431 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3558FD141E824BD300ECC431 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3558FD181E824BD300ECC431 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3558FD191E824BD300ECC431 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3558FD1C1E824BD300ECC431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3558FD1D1E824BD300ECC431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3558FD1F1E824BD300ECC431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8ZU3Y58CG;
+				INFOPLIST_FILE = "Hybird(UIWebView&WKWebView)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.smm.anRan.Hybird-UIWebView-WKWebView-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3558FD201E824BD300ECC431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8ZU3Y58CG;
+				INFOPLIST_FILE = "Hybird(UIWebView&WKWebView)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.smm.anRan.Hybird-UIWebView-WKWebView-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3558FD071E824BD200ECC431 /* Build configuration list for PBXProject "Hybird(UIWebView&WKWebView)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3558FD1C1E824BD300ECC431 /* Debug */,
+				3558FD1D1E824BD300ECC431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3558FD1E1E824BD300ECC431 /* Build configuration list for PBXNativeTarget "Hybird(UIWebView&WKWebView)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3558FD1F1E824BD300ECC431 /* Debug */,
+				3558FD201E824BD300ECC431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3558FD041E824BD200ECC431 /* Project object */;
+}
