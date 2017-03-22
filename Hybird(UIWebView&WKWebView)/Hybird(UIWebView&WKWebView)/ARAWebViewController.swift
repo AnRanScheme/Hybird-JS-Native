@@ -62,25 +62,27 @@ class ARAWebViewController: UIViewController {
     
     
     func getLocation() {
-        let jsStr = "setLocation('杭州市拱墅区下沙中国计量学院')"
+        let jsStr = "setLocation('\("杭州市拱墅区下沙中国计量学院")')"
         webView.stringByEvaluatingJavaScript(from: jsStr)
     }
     
     func share(url: URL) {
-        guard let params = url.query?.components(separatedBy: "&") else{ return }
-        var tempDic = [String: Any]()
+       
+        guard let params = url.query?.components(separatedBy: "&") else { return }
+       
+        var tempDic = NSDictionary()
         for paramStr in params {
             let dicArray = paramStr.components(separatedBy: "=")
             if dicArray.count > 0 {
-                guard let str = dicArray.first else { return }
-                tempDic = [dicArray[0]:str]
+                let str = dicArray[1].removingPercentEncoding
+                tempDic = [dicArray[0]:str!]
             }
         }
-        
+    
         let title = tempDic["title"]
         let content = tempDic["content"]
         let url = tempDic["url"]
-        
+
         let jsStr = "shareResult('\(title)','\(content)','\(url)')"
         
         webView.stringByEvaluatingJavaScript(from: jsStr)
