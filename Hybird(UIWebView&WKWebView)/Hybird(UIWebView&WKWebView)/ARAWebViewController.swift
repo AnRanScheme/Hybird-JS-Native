@@ -49,12 +49,12 @@ class ARAWebViewController: UIViewController {
         } else if host == "getLocation" {
             getLocation()
         } else if host == "setColor" {
-            
+            ChangeColor(url: url)
         } else if host == "payAction" {
-            
+            payAction(url: url)
         } else if host == "shake" {
-            
-        } else if host == "goBack" {
+            sharedAction()
+        } else if host == "back" {
             goBack()
         }
         
@@ -70,12 +70,12 @@ class ARAWebViewController: UIViewController {
        
         guard let params = url.query?.components(separatedBy: "&") else { return }
        
-        var tempDic = NSDictionary()
+        var tempDic = [String:Any]()
         for paramStr in params {
             let dicArray = paramStr.components(separatedBy: "=")
-            if dicArray.count > 0 {
-                let str = dicArray[1].removingPercentEncoding
-                tempDic = [dicArray[0]:str!]
+            if dicArray.count > 1 {
+                guard let str = dicArray[1].removingPercentEncoding else { return }
+                tempDic[dicArray[0]] = str
             }
         }
     
@@ -83,7 +83,45 @@ class ARAWebViewController: UIViewController {
         let content = tempDic["content"]
         let url = tempDic["url"]
 
-        let jsStr = "shareResult('\(title)','\(content)','\(url)')"
+        let jsStr = "shareResult('\(title ?? "")','\(content ?? "")','\(url ?? "")')"
+        
+        webView.stringByEvaluatingJavaScript(from: jsStr)
+    }
+    
+    
+    func ChangeColor(url: URL) {
+        guard let params = url.query?.components(separatedBy: "&") else { return }
+        
+        var tempDic = [String:Any]()
+        for paramStr in params {
+            let dicArray = paramStr.components(separatedBy: "=")
+            if dicArray.count > 1 {
+                guard let str = dicArray[1].removingPercentEncoding else { return }
+                tempDic[dicArray[0]] = str
+                print("\(str)")
+            }
+        }
+        let r = (tempDic["r"] as! NSString).floatValue
+        let g = (tempDic["g"] as! NSString).floatValue
+        let b = (tempDic["b"] as! NSString).floatValue
+        let a = (tempDic["a"] as! NSString).floatValue
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        navigationController?.navigationBar.backgroundColor = UIColor(colorLiteralRed: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+    }
+    
+    func payAction(url: URL) {
+        guard let params = url.query?.components(separatedBy: "&") else { return }
+        
+        var tempDic = [String:Any]()
+        for paramStr in params {
+            let dicArray = paramStr.components(separatedBy: "=")
+            if dicArray.count > 1 {
+                guard let str = dicArray[1].removingPercentEncoding else { return }
+                tempDic[dicArray[0]] = str
+            }
+        }
+        
+        let jsStr = "payResult('支付成功',\(1))"
         
         webView.stringByEvaluatingJavaScript(from: jsStr)
     }
