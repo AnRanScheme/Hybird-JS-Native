@@ -153,6 +153,7 @@ extension ARAWebViewController: UIWebViewDelegate {
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         print("webView加载完成然后调用")
+        webView.stringByEvaluatingJavaScript(from: "var arr = [3, 4, 'abc']")
     }
     
 }

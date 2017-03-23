@@ -65,7 +65,7 @@ class ARAWKWebViewController: UIViewController {
         let host = url.host
         
         if host == "scanClick" {
-            
+            print("点我干什么")
         } else if host == "shareClick" {
             share(url: url)
         } else if host == "getLocation" {
@@ -200,7 +200,7 @@ extension ARAWKWebViewController: WKNavigationDelegate,WKUIDelegate {
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         
         let alert = UIAlertController(title: "提醒", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "知道了", style: .cancel, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "知道", style: .cancel, handler: { (action) in
             completionHandler()
         }))
         
