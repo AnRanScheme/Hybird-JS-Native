@@ -21,7 +21,7 @@
             }
                 
             function shareClick() {
-                loadURL("anranAction://shareClick?title=测试分享的标题&content=测试分享的内容&url=http://www.baidu.com");
+                loadURL("anranAction://shareClick?title=标题&content=内容&url=http://www.baidu.com");
             }
             
             function locationClick() {
@@ -84,12 +84,12 @@
     
     <body>
         <h1>这是按钮调用</h1>
-        <input type="button" value="扫一扫" onclick="scanClick()" />
+        <input type="button" value="点我点我" onclick="scanClick()" />
         <input type="button" value="获取定位" onclick="locationClick()" />
-        <input type="button" value="修改背景色" onclick="colorClick()" />
+        <input type="button" value="修改导航栏颜色" onclick="colorClick()" />
         <input type="button" value="分享" onclick="shareClick()" />
         <input type="button" value="支付" onclick="payClick()" />
-        <input type="button" value="摇一摇" onclick="shake()" />
+        <input type="button" value="动次打次" onclick="shake()" />
         <input type="button" value="返回" onclick="goBack()" />
         
         <h1>这是文件上传</h1>
