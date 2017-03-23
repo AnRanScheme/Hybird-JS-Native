@@ -12,7 +12,6 @@ import WebKit
 class ARAWKWebViewController: UIViewController {
     
     lazy var webView: WKWebView = {[unowned self] in
-        
         let configuration = WKWebViewConfiguration()
         configuration.userContentController = WKUserContentController()
         let preferences = WKPreferences()
@@ -26,7 +25,6 @@ class ARAWKWebViewController: UIViewController {
         view.navigationDelegate = self
         view.uiDelegate = self
         return view
-        
     }()
     
     lazy var progressView: UIProgressView = {
