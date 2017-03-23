@@ -9,4 +9,4 @@
   - 使用第三方cordova库，以前叫PhoneGap(这是一个库平台的库)
   - 使用React Native
 ---
-![这是列子](https://github.com/AnRanScheme/Hybird-JS-Native/raw/master/Hybird-JS-Native/picture.gif)
+![这是列子](https://github.com/AnRanScheme/Hybird-JS-Native/raw/master/picture.gif)
