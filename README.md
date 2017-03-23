@@ -10,4 +10,6 @@
   - 使用React Native
 ---
 ![这是列子](https://github.com/AnRanScheme/Hybird-JS-Native/raw/master/picture.gif)
+
 如何实现请看我的简书要是有问题欢迎指正[更详细的介绍在简书中哦](http://www.jianshu.com/p/ee18d36c50ce)
+还有后续更新的哈
