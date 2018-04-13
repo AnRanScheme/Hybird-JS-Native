@@ -111,7 +111,6 @@ class ARAWebViewController: UIViewController {
     
     func payAction(url: URL) {
         guard let params = url.query?.components(separatedBy: "&") else { return }
-        
         var tempDic = [String:Any]()
         for paramStr in params {
             let dicArray = paramStr.components(separatedBy: "=")
